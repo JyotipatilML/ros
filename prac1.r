@@ -1,0 +1,7 @@
+data <- c(12, 20, 15, 30, 25)
+find_mean <- mean(data)
+difference <- sum((data - find_mean)^2)
+n <- length(data)
+variance <- difference / (n - 1)
+sd <- sqrt(variance)
+cat("Standard deviation is", sd)
